@@ -21,9 +21,11 @@
 }
 
 body {
+    overflow: hidden;
     font-family: 'Motiva Sans', sans-serif;
     font-weight: 500;
-    font-size: 14px
+    font-size: 14px;
+    background: -webkit-linear-gradient(left, #000000 16%,#1e5799 100%); 
 }
 
 header {
@@ -54,4 +56,10 @@ nav > a {
 
 nav > a:hover {
     color: whitesmoke;
+}
+
+.video-loop {
+    display: block;
+    margin: auto;
+    width: 100%;
 }
