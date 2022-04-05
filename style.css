@@ -82,6 +82,10 @@ nav > a:hover {
     padding: 10px 12px;
 }
 
+.mySlides {
+    display: none;
+}
+
 footer {
     display: grid;
     grid-row: auto;
