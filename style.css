@@ -13,7 +13,7 @@
 }
 
 :root {
-    --nav-bg: #171A21;
+    --bg-destaque: #171A21;
     --font-destaque: 'Tahoma', sans-serif;
     --font-des-peso: Large;
     --font-secundaria: Arial;
@@ -21,7 +21,6 @@
 }
 
 body {
-    overflow: hidden;
     font-family: 'Motiva Sans', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -33,21 +32,23 @@ header {
     flex-direction: row;
     text-align: left;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 25%;
+    justify-content: center;
+    padding: 36px 56px;
     gap: 56px;
     background-color: #171A21;
 }
 
 #logo {
-    width: 176px;
+    height: 75px;
 }
 
 nav {
     display: flex;
-    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 112px;
+    gap: 36px;
 }
 
 nav > a {
@@ -62,4 +63,29 @@ nav > a:hover {
     display: block;
     margin: auto;
     width: 100%;
+}
+
+.container {
+    display: inline-block;
+    padding: 16px 24px;
+    align-items: center;
+    margin: 12rem;
+}
+
+.container-title {
+    color: var(--font-color);
+    padding: 10px 12px;
+}
+
+.cover {
+    align-self: center;
+    padding: 10px 12px;
+}
+
+footer {
+    display: grid;
+    grid-row: auto;
+    padding: 56px;
+    background-color: var(--bg-destaque);
+    height: 12rem;
 }
